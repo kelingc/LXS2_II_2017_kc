@@ -1,0 +1,38 @@
+    1  exit
+    2  reboot
+    3  su soporte -
+    4  su - soporte
+    5  ls
+    6  ls Documents/
+    7  ls Downloads/
+    8  exit 
+    9  ssh -p 2222 sysadmin@localhost 
+   10  ssh soporte@10.124.18.29
+   11  pwd
+   12  mkdir Academia-UCR
+   13  cd Academia-UCR/
+   14  ls 
+   15  git clone https://github.com/kelingc/LXS2_II_2017_kc.git Mi-repo-remoto
+   16  ls 
+   17  cd Mi-repo-remoto/
+   18  ls
+   19  ifconfig >>misc/file1
+   20  git add misc/file1
+   21  git commit -m "Modificacion desde la casa"
+   22  git status
+   23  git push -u origin  master
+   24  pwd
+   25  ip addr show
+   26  cd /dev/null
+   27  cd /dev/
+   28  ls
+   29  cd null
+   30  ls -ltra
+   31  cd Downloads/
+   32  ls
+   33  cd LX
+   34  cd LXS2_II_2017_kc/
+   35  lsb_release -r
+   36  cd Downloads/LXS2_II_2017_kc/
+   37  cd history/
+   38  history > history-clase1
