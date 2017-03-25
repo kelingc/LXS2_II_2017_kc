@@ -1,0 +1,366 @@
+    1  exit
+    2  reboot
+    3  su soporte -
+    4  su - soporte
+    5  ls
+    6  ls Documents/
+    7  ls Downloads/
+    8  exit 
+    9  ssh -p 2222 sysadmin@localhost 
+   10  ssh soporte@10.124.18.29
+   11  pwd
+   12  mkdir Academia-UCR
+   13  cd Academia-UCR/
+   14  ls 
+   15  git clone https://github.com/kelingc/LXS2_II_2017_kc.git Mi-repo-remoto
+   16  ls 
+   17  cd Mi-repo-remoto/
+   18  ls
+   19  ifconfig >>misc/file1
+   20  git add misc/file1
+   21  git commit -m "Modificacion desde la casa"
+   22  git status
+   23  git push -u origin  master
+   24  pwd
+   25  ip addr show
+   26  cd /dev/null
+   27  cd /dev/
+   28  ls
+   29  cd null
+   30  ls -ltra
+   31  cd Downloads/
+   32  ls
+   33  cd LX
+   34  cd LXS2_II_2017_kc/
+   35  lsb_release -r
+   36  type git
+   37  apt-get install git
+   38  sudo apt-get install git
+   39  su - soporte
+   40  type git
+   41  ls
+   42  cd Downloads/
+   43  mkdir LXS2_II_2017_kc
+   44  cd LXS2_II_2017_kc/
+   45  git init
+   46  ls 
+   47  ls -la
+   48  su - soporte
+   49  type tree
+   50  tree
+   51  tree -a
+   52  ls -la
+   53  git config --global user.name "Keling Caballero"
+   54  git config --global user.email "kelingc_15@hotmail.com"
+   55  ls
+   56  ls -la
+   57  vim ~/.gitconfig
+   58  vim .gitignore
+   59  mkdir src
+   60  mkdir misc
+   61  mkdir logs
+   62  mkdir data
+   63  tre
+   64  tree
+   65  tree -a
+   66  touch {logs,misc,src,data}/file1
+   67  tree
+   68  git status
+   69  git add --all
+   70  git commint -m "Inicio de la estructura de mi repositorio"
+   71  git commit -m "Inicio de la estructura de mi repositorio"
+   72  git status
+   73  touch data/file2
+   74  git status
+   75  last > misc/ultimo-acceso.log
+   76  dmesg | head  >> data/file1
+   77  git status
+   78  git add data/file1
+   79  git add data/file2
+   80  git status
+   81  git commit -m "Dos nuevos archivos"
+   82  git log
+   83  last
+   84  git remote add origin https://github.com/kelingc/LXS2_II_2017_kc.git
+   85  git remote -v
+   86  git push -u origin master
+   87  git remote add Diego https://github.com/diegor12/LXS2_II_2017_drr.git
+   88  git remove -v
+   89  git remote -v
+   90  git push -u Diego master
+   91  git pull origin master
+   92  cd
+   93  VAR=1
+   94  export VAR
+   95  echo $VAR
+   96  unset VAR
+   97  echo $VAR
+   98  env
+   99  echo $VAR
+  100  env VAR=22 bash
+  101  echo $VAR
+  102  clear
+  103  ps1=$PS1
+  104  echp ps1
+  105  echo ps1
+  106  echo $ps1
+  107  PS1="comandos> "
+  108  ls
+  109  PS1=$ps1
+  110  alias
+  111  cd Downloads/
+  112  ls
+  113  cd LXS2_II_2017_kc/
+  114  mkdir history
+  115  alias STm='date +%Y%m%d'
+  116  STm
+  117  var_time=STm
+  118  var_time=`STm`
+  119  history > history/history-`STm`.log
+  120  tree
+  121  alias STm='date +%Y%m%d_%H:%M'
+  122  alias
+  123  alias -p
+  124  STm
+  125  history
+  126  clear
+  127  reportes () { cd /usr/share/doc; echo "Reporte `date +%Y%m%d`" > /tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+  128  reportes
+  129  cat /tmp/reporte
+  130  reportes () { cd /usr/share/doc; echo "Reporte: `date +%Y%m%d`" > /tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+  131  cd 
+  132  ls
+  133  cd Downloads/
+  134  ls
+  135  ls -la
+  136  cd
+  137  cd /var/www/html/
+  138  cd /var/www/html
+  139  clear
+  140  cd Downloads/
+  141  ls
+  142  cd LXS2_II_2017_kc/
+  143  cd src/
+  144  echo '#!/bin/bash' > Monitor.sh
+  145  ls
+  146  cat Monitor.sh 
+  147  echo 'cd /usr/share/doc' >> Monitor.sh 
+  148  echo 'echo Reporte: >> /tmp/reporte' >> Monitor.sh 
+  149  echo 'date >> /tmp/reporte' >> Monitor.sh 
+  150  echo 'ped >> /tmp/reporte' >> Monitor.sh 
+  151  echo 'pwd >> /tmp/reporte' >> Monitor.sh 
+  152  echo 'du -sh . >> /tmp/reporte' >> Monitor.sh 
+  153  ls
+  154  vim Monitor.sh 
+  155  chmod u+x monitor.sh
+  156  chmod u+x Monitor.sh
+  157  ./Monitor.sh 
+  158  rm /tmp/reporte 
+  159  ./Monitor.sh 
+  160  cat /tmp/reporte
+  161  vim Monitor.sh 
+  162  git status
+  163  git add monitor.sh
+  164  git add Monitor.sh
+  165  git commit -m "Creacion del Script del monitoreo"
+  166  git push origin master
+  167  vim Monitor.sh 
+  168  ps -ef
+  169  vim Monitor.sh 
+  170  ps -ef
+  171  kill 9176
+  172  ps -ef
+  173  kill -15 9176
+  174  ps -ef
+  175  vim Monitor.sh 
+  176  jobs
+  177  jobs
+  178  fg 
+  179  jobs
+  180  vim Monitor.sh 
+  181  ./Monitor.sh 
+  182  rm /tmp/reporte
+  183  ./Monitor.sh 
+  184  cat /tmp/reporte
+  185  git status
+  186  git diff Monitor.sh
+  187  git add Monitor.sh 
+  188  git commit 
+  189  git push origin master
+  190  git log
+  191  vim Monitor.sh 
+  192  ./Monitor.sh 
+  193  vim Monitor.sh 
+  194  ./Monitor.sh 
+  195  git add Monitor.sh 
+  196  git commit -m "Mejora X"
+  197  git push origin master
+  198  cd 
+  199  var="casa"
+  200  var2="perro"
+  201  test var=var2
+  202  echo $?
+  203  test $var=$var2
+  204  echo $?
+  205  test "var" = " var2 "
+  206  echo $?
+  207  echo $var
+  208  echo $var2
+  209  test "var" = " var2 "
+  210  echo $?
+  211  test " var " = " var2
+  212  echo $?
+  213  test $var = $var2
+  214  echo $?
+  215  echo #var
+  216  echo $var
+  217  echo $var2
+  218  var2=perro
+  219  test $var = $var2
+  220  echo $?
+  221  echo $USER
+  222  if [ $USER = 'estudiante' ]; then        echo 'El usuario puede continuar'; fi
+  223  cd Downloads/
+  224  ls
+  225  cd LXS2_II_2017_kc/
+  226  ls
+  227  cd src
+  228  vim parametros
+  229  touch parametros parametros.sh
+  230  ls
+  231  vim parametros.sh
+  232  ls
+  233  rm parametros
+  234  ls
+  235  chmod u+x parametros.sh 
+  236  ls -l
+  237  ./parametros.sh 
+  238  ./parametros.sh j perro perrito
+  239  git add parametros.sh
+  240  git commit -m "Inicio del script de parametros"
+  241  git push origin master
+  242  vim parametros.sh
+  243  ./parametros.sh 
+  244  ./parametros.sh perro
+  245  ./parametros.sh perro perrito perrote
+  246  git status
+  247  git add parametros.sh 
+  248  git commit -m "Version 2 del IF"
+  249  git push origin master
+  250  vim parametros.sh 
+  251  cd 
+  252  cd Downloads/
+  253  cd LXS2_II_2017_kc/
+  254  cd history/
+  255  ls
+  256  rm history-20170318.log 
+  257  git status
+  258  cd Downloads/LXS2_II_2017_kc/
+  259  cd history/
+  260  history > history-clase1
+  261  ls
+  262  mv history-clase1 history-clase1.txt 
+  263  ls
+  264  git status
+  265  ls
+  266  git add history-clase1.txt 
+  267  git status
+  268  git commit -m "History de la clase 1"
+  269  git push origin master
+  270  chmod 750 modcase.sh 
+  271  ./modcase.sh /tmp/change-case/
+  272  ls
+  273  git add modcase.sh
+  274  git commit -m "Creacion de Script con For"
+  275  git push origin master
+  276  ls
+  277  vim parametros.sh 
+  278  ls
+  279  cd 
+  280  ls
+  281  cd Documents/
+  282  ls
+  283  cd /Downloads/
+  284  cd 
+  285  Downloads/
+  286  cd Dow
+  287  cd Downloads/
+  288  ls
+  289  mkdir test
+  290  cd test
+  291  git clone https://github.com/emvarg/LXS2_II-2017_evb.git repo-del-profe
+  292  ls
+  293  cd repo-del-profe/
+  294  ls
+  295  cd src
+  296  ls
+  297  vim parametros.sh 
+  298  cd 
+  299  cd Downloads/
+  300  ls
+  301  cd LXS2_II_2017_kc/
+  302  ls
+  303  cd src
+  304  ls
+  305  vim parametros.sh 
+  306  vim Monitor.sh 
+  307  vim file1
+  308  cd ..
+  309  ls
+  310  cd data/
+  311  ls
+  312  cd ..
+  313  ls
+  314  cd misc/
+  315  ls
+  316  cd ..
+  317  ls
+  318  cd logs
+  319  ls
+  320  cd ..
+  321  cd src/
+  322  ls
+  323  vim Monitor.sh 
+  324  vim parametros.sh 
+  325  cd ../..
+  326  ls
+  327  cd test}
+  328  cd test
+  329  ls
+  330  cd repo-del-profe/
+  331  git pull 
+  332  ls
+  333  cd src
+  334  ls
+  335  ~cd ../..
+  336  ls
+  337  cd ../..
+  338  cd ..
+  339  cd LXS2_II_2017_kc/
+  340  cd /tmp/
+  341  mkdir algo
+  342  mkdir -p folder1/folder{2,3,4}/arch{2,3}
+  343  tree
+  344  cd algo
+  345  mkdir -p folder1/folder{2,3,4}/arch{2,3}
+  346  cd ..
+  347  rm -r folder1
+  348  cd algo
+  349  tree
+  350  touch folder1/folder3/file1.conf
+  351  touch folder1/folder3/file2.conf
+  352  cd
+  353  su - soporte
+  354  mysql -u root -p
+  355  dpkg --get-selections | grep mysql
+  356  sudo mysql_secure_installation 
+  357  su - soporte
+  358  cd Downloads/
+  359  ls
+  360  cd LXS2_II_2017_kc/
+  361  LS
+  362  Ls
+  363  ls
+  364  cd history/
+  365  ls
+  366  history > history-clase2.txt
