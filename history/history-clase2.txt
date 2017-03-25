@@ -267,100 +267,133 @@
   267  git status
   268  git commit -m "History de la clase 1"
   269  git push origin master
-  270  chmod 750 modcase.sh 
-  271  ./modcase.sh /tmp/change-case/
-  272  ls
-  273  git add modcase.sh
-  274  git commit -m "Creacion de Script con For"
-  275  git push origin master
-  276  ls
-  277  vim parametros.sh 
+  270  cd tmp
+  271  cd /tmp/
+  272  mkdir change-case
+  273  cd change-case/
+  274  touch FILE
+  275  touch File1
+  276  touch File2
+  277  touch File3
   278  ls
-  279  cd 
+  279  su - soporte 
   280  ls
-  281  cd Documents/
-  282  ls
-  283  cd /Downloads/
-  284  cd 
-  285  Downloads/
-  286  cd Dow
-  287  cd Downloads/
-  288  ls
-  289  mkdir test
-  290  cd test
-  291  git clone https://github.com/emvarg/LXS2_II-2017_evb.git repo-del-profe
-  292  ls
-  293  cd repo-del-profe/
-  294  ls
-  295  cd src
-  296  ls
-  297  vim parametros.sh 
-  298  cd 
-  299  cd Downloads/
-  300  ls
-  301  cd LXS2_II_2017_kc/
-  302  ls
-  303  cd src
-  304  ls
-  305  vim parametros.sh 
-  306  vim Monitor.sh 
-  307  vim file1
-  308  cd ..
+  281  cd Downloads/
+  282  cd src
+  283  ls
+  284  cd LXS2_II_2017_kc/
+  285  LS
+  286  ls
+  287  cd src
+  288  vim migra.sh
+  289  mv migra.sh modcase.sh
+  290  vim modcase.sh
+  291  chmod 750 modcase.sh 
+  292  ./modcase.sh /tmp/change-case/
+  293  ls
+  294  git add modcase.sh
+  295  git commit -m "Creacion de Script con For"
+  296  git push origin master
+  297  ls
+  298  vim parametros.sh 
+  299  ls
+  300  cd 
+  301  ls
+  302  cd Documents/
+  303  ls
+  304  cd /Downloads/
+  305  cd 
+  306  Downloads/
+  307  cd Dow
+  308  cd Downloads/
   309  ls
-  310  cd data/
-  311  ls
-  312  cd ..
+  310  mkdir test
+  311  cd test
+  312  git clone https://github.com/emvarg/LXS2_II-2017_evb.git repo-del-profe
   313  ls
-  314  cd misc/
+  314  cd repo-del-profe/
   315  ls
-  316  cd ..
+  316  cd src
   317  ls
-  318  cd logs
-  319  ls
-  320  cd ..
-  321  cd src/
-  322  ls
-  323  vim Monitor.sh 
-  324  vim parametros.sh 
-  325  cd ../..
-  326  ls
-  327  cd test}
-  328  cd test
-  329  ls
-  330  cd repo-del-profe/
-  331  git pull 
+  318  vim parametros.sh 
+  319  cd 
+  320  cd Downloads/
+  321  ls
+  322  cd LXS2_II_2017_kc/
+  323  ls
+  324  cd src
+  325  ls
+  326  vim parametros.sh 
+  327  vim Monitor.sh 
+  328  vim file1
+  329  cd ..
+  330  ls
+  331  cd data/
   332  ls
-  333  cd src
+  333  cd ..
   334  ls
-  335  ~cd ../..
+  335  cd misc/
   336  ls
-  337  cd ../..
-  338  cd ..
-  339  cd LXS2_II_2017_kc/
-  340  cd /tmp/
-  341  mkdir algo
-  342  mkdir -p folder1/folder{2,3,4}/arch{2,3}
-  343  tree
-  344  cd algo
-  345  mkdir -p folder1/folder{2,3,4}/arch{2,3}
-  346  cd ..
-  347  rm -r folder1
-  348  cd algo
-  349  tree
-  350  touch folder1/folder3/file1.conf
-  351  touch folder1/folder3/file2.conf
-  352  cd
-  353  su - soporte
-  354  mysql -u root -p
-  355  dpkg --get-selections | grep mysql
-  356  sudo mysql_secure_installation 
-  357  su - soporte
-  358  cd Downloads/
-  359  ls
+  337  cd ..
+  338  ls
+  339  cd logs
+  340  ls
+  341  cd ..
+  342  cd src/
+  343  ls
+  344  vim Monitor.sh 
+  345  vim parametros.sh 
+  346  cd ../..
+  347  ls
+  348  cd test}
+  349  cd test
+  350  ls
+  351  cd repo-del-profe/
+  352  git pull 
+  353  ls
+  354  cd src
+  355  ls
+  356  ~cd ../..
+  357  ls
+  358  cd ../..
+  359  cd ..
   360  cd LXS2_II_2017_kc/
-  361  LS
-  362  Ls
-  363  ls
-  364  cd history/
-  365  ls
-  366  history > history-clase2.txt
+  361  cd /tmp/
+  362  mkdir algo
+  363  mkdir -p folder1/folder{2,3,4}/arch{2,3}
+  364  tree
+  365  cd algo
+  366  mkdir -p folder1/folder{2,3,4}/arch{2,3}
+  367  cd ..
+  368  rm -r folder1
+  369  cd algo
+  370  tree
+  371  touch folder1/folder3/file1.conf
+  372  touch folder1/folder3/file2.conf
+  373  cd
+  374  su - soporte
+  375  mysql -u root -p
+  376  dpkg --get-selections | grep mysql
+  377  sudo mysql_secure_installation 
+  378  su - soporte
+  379  cd Downloads/
+  380  ls
+  381  cd LXS2_II_2017_kc/
+  382  LS
+  383  Ls
+  384  ls
+  385  cd history/
+  386  ls
+  387  history > history-clase2.txt
+  388  git add history-clase2.txt 
+  389  git commit -m "HIstory clase 2"
+  390  cd Downloads/
+  391  ls
+  392  cd LXS2_II_2017_kc/
+  393  ls
+  394  cd his
+  395  cd history/
+  396  ls
+  397  rm history-clase2.txt 
+  398  ls
+  399  history > history-clase2.txt
